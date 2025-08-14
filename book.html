@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+       <meta charset="UTF-8">
+       <a href="brtsmain.html">Back to home page</a>
+    </head>
+
+    <body>
+        <main>
+            <h2>Search Your Route</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <p>
+                    <p>Route type</p>
+                    <input type="radio" id="all" name="stops" >
+                    <label for="all">All stops(service starts from new bus terminal Dharwad)</label>
+                </p>
+                <p>
+                    <input type="radio" id="limited" name="stops" >
+                    <label for="limited">Limited stops(service starts from Dharwad BRTS Terminal or old bus terminal) </label>
+                </p>
+                <p>
+                    <label for="start">Start Point:</label>
+                    <input type="text" name="start" id="start" list="start-list">
+                </p>
+
+                <p>
+                    <label for="end">Destination:</label>
+                    <input type="text" name="end" id="end" list="end-list">
+                </p>
+
+                <datalist id="start-list">
+                    <option value="Dharwad New Bus Stand">
+                    <option value="Hubli CBT (HDBRTS Stop)">
+                    <option value="Dharwad BRTS Terminal">
+                <option value="Jubilee Circle">
+                <option value="Court Circle">
+                <option value="NTTF">
+                <option value="Hosayellapur Cross">
+                <option value="Vidyagiri">
+                <option value="Gandhinagar">
+                <option value="Yelakki Shetter Colony Cross">
+                <option value="Navalur">
+                <option value="Lakamanahalli">
+                <option value="Sattur">
+                <option value="Navalur Railway Station">
+                <option value="SDM Medical College">
+                <option value="Sanjivini Park">
+                <option value="KMF 1">
+                <option value="ISKCON Temple">
+                <option value="RTO Office">
+                <option value="Rayapur">
+                <option value="Navanagar">
+                <option value="APMC 3rd Gate">
+                <option value="Shantiniketan">
+                <option value="Bairidevarakoppa">
+                <option value="Unkal Lake">
+                <option value="Unkal">
+                <option value="Unkal Cross">
+                <option value="BVB">
+                <option value="Vidyanagar">
+                <option value="KIMS">
+                <option value="Hosur Regional Terminal">
+                <option value="Hosur Cross">
+                <option value="Hubli Central">
+                <option value="Dr. B. R. Ambedkar Railway Station">
+                <option value="HDMC">
+                <option value="Hubli CBT (HDBRTS Stop)">    
+                    
+                </datalist>
+
+                <datalist id="end-list">
+                    <option value="Hubli CBT (HDBRTS Stop)">
+                    <option value="Dharwad New Bus Stand">
+                    <option value="Dharwad BRTS Terminal">
+                <option value="Jubilee Circle">
+                <option value="Court Circle">
+                <option value="NTTF">
+                <option value="Hosayellapur Cross">
+                <option value="Vidyagiri">
+                <option value="Gandhinagar">
+                <option value="Yelakki Shetter Colony Cross">
+                <option value="Navalur">
+                <option value="Lakamanahalli">
+                <option value="Sattur">
+                <option value="Navalur Railway Station">
+                <option value="SDM Medical College">
+                <option value="Sanjivini Park">
+                <option value="KMF 1">
+                <option value="ISKCON Temple">
+                <option value="RTO Office">
+                <option value="Rayapur">
+                <option value="Navanagar">
+                <option value="APMC 3rd Gate">
+                <option value="Shantiniketan">
+                <option value="Bairidevarakoppa">
+                <option value="Unkal Lake">
+                <option value="Unkal">
+                <option value="Unkal Cross">
+                <option value="BVB">
+                <option value="Vidyanagar">
+                <option value="KIMS">
+                <option value="Hosur Regional Terminal">
+                <option value="Hosur Cross">
+                <option value="Hubli Central">
+                <option value="Dr. B. R. Ambedkar Railway Station">
+                <option value="HDMC">
+                <option value="Hubli CBT (HDBRTS Stop)">
+                </datalist>
+
+            <p>
+                <label for="count">NO of passengers:</label>
+                    <input type="text" name="count" id="count" list="count-list">
+                    <datalist id="count-list">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+            </p>
+                <button type="submit"> Book</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        </main>
+    </body>
+</html>
