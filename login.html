@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>BRTS Login</title>
+</head>
+
+<body>
+
+<header> 
+    <nav>
+    <p>
+    <a href="fulllog.html">New User?</a>
+    </p>
+    <p>
+    <a href="brtsmain.html">Back to home page</a>
+    </p>
+    </nav>
+</header>
+
+<form action="https://httpbin.org/post" method="post">
+    <fieldset>
+        <legend>Login</legend>
+
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Username">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </p>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+</body>
+</html>
